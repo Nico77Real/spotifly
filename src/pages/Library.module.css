@@ -1,0 +1,253 @@
+.library {
+  width: 100%;
+}
+
+.library h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tabs button {
+  background: transparent;
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: all 0.2s;
+}
+
+.tabs button:hover {
+  color: #fff;
+}
+
+.activeTab {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.uploadBtn {
+  background-color: #1db954;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.uploadBtn:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(29, 185, 84, 0.4);
+}
+
+.dropZone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(29, 185, 84, 0.95);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.2s ease;
+}
+
+.dropZone h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.dropZone p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.uploadForm {
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.uploadForm h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.uploadForm input {
+  background-color: #282828;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.formButtons {
+  display: flex;
+  gap: 16px;
+}
+
+.formButtons button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.formButtons button[type="submit"] {
+  background-color: #1db954;
+  color: #fff;
+}
+
+.formButtons button[type="button"] {
+  background-color: #282828;
+  color: #fff;
+}
+
+.trackList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trackItem {
+  display: grid;
+  grid-template-columns: 40px 56px 1fr 200px 100px 100px;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.trackItem:hover {
+  background-color: #282828;
+}
+
+.trackNumber {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.trackCover {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.trackInfo {
+  min-width: 0;
+}
+
+.trackTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.trackArtist {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackAlbum {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackDuration {
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.playBtn, .deleteBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.playBtn {
+  background-color: #1db954;
+  color: #000;
+}
+
+.playBtn:hover {
+  transform: scale(1.06);
+}
+
+.deleteBtn {
+  background-color: transparent;
+  color: #b3b3b3;
+}
+
+.deleteBtn:hover {
+  color: #e22134;
+}
+
+.empty {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.empty h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.empty p {
+  font-size: 18px;
+  color: #b3b3b3;
+}

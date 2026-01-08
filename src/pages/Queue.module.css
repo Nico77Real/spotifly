@@ -1,0 +1,228 @@
+.queue {
+  padding: 24px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.clearBtn {
+  background: transparent;
+  color: #b3b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #b3b3b3;
+  transition: all 0.2s ease;
+}
+
+.clearBtn:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nowPlaying {
+  margin-bottom: 48px;
+}
+
+.nowPlaying h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b3b3b3;
+  margin-bottom: 16px;
+}
+
+.currentTrack {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(29, 185, 84, 0.3);
+}
+
+.currentTrack img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.trackInfo {
+  flex: 1;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.artist {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.playingIndicator {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  height: 24px;
+}
+
+.playingIndicator span {
+  width: 4px;
+  background: #fff;
+  border-radius: 2px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.playingIndicator span:nth-child(1) {
+  height: 100%;
+  animation-delay: 0s;
+}
+
+.playingIndicator span:nth-child(2) {
+  height: 60%;
+  animation-delay: 0.2s;
+}
+
+.playingIndicator span:nth-child(3) {
+  height: 80%;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.nextUp h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #b3b3b3;
+  margin-bottom: 24px;
+}
+
+.trackList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.queueTrack {
+  display: grid;
+  grid-template-columns: 40px 60px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.queueTrack:hover {
+  background-color: #282828;
+}
+
+.trackNumber {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+  min-width: 0;
+}
+
+.trackTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.trackArtist {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.playBtn,
+.removeBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: #b3b3b3;
+}
+
+.playBtn:hover {
+  background: #1db954;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.removeBtn:hover {
+  background: #e22134;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.empty {
+  text-align: center;
+  padding: 64px 24px;
+  color: #b3b3b3;
+}
+
+.empty p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.empty p:last-child {
+  font-size: 16px;
+}

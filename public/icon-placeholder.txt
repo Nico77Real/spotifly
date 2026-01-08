@@ -1,0 +1,46 @@
+ISTRUZIONI PER CREARE LE ICONE DELL'APPLICAZIONE
+================================================
+
+Hai bisogno di creare 3 file icona per supportare tutte le piattaforme:
+
+1. icon.ico - per Windows
+2. icon.icns - per macOS  
+3. icon.png - per Linux
+
+STRUMENTI CONSIGLIATI:
+---------------------
+
+OPZIONE 1 - Online (Più facile):
+- Vai su https://www.icoconverter.com/
+- Carica un'immagine PNG quadrata (512x512 o 1024x1024)
+- Scarica .ico per Windows
+- Usa https://cloudconvert.com/png-to-icns per creare .icns per Mac
+
+OPZIONE 2 - Software Desktop:
+- Windows: IcoFX, Greenfish Icon Editor
+- Mac: Icon Composer, Image2Icon
+- Multipiattaforma: GIMP (con plugin ICO)
+
+OPZIONE 3 - Usa un logo esistente:
+Se hai già un logo Spotifly, salvalo come:
+- icon.ico (256x256, 128x128, 64x64, 48x48, 32x32, 16x16)
+- icon.icns (formato Apple)
+- icon.png (512x512 o 1024x1024)
+
+DESIGN CONSIGLIATO:
+------------------
+- Sfondo trasparente o colorato solido
+- Simbolo musicale (nota, cuffie, disco)
+- Colori: Verde (#1DB954) e Nero (#121212) per richiamare Spotify
+- Design semplice e riconoscibile anche a dimensioni piccole
+
+POSIZIONAMENTO FILE:
+-------------------
+Dopo aver creato le icone, mettile nella cartella:
+c:\Users\User\Desktop\Spotifly 2.0\public\
+
+- public/icon.ico
+- public/icon.icns  
+- public/icon.png
+
+Poi elimina questo file (icon-placeholder.txt) e ricostruisci l'app.

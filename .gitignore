@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+build/
+dist/
+*.log
+
+# Database
+*.db
+*.db-journal
+server/spotifly.db
+
+# Uploads
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Electron
+out/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*-backup.js
+*-backup.json
+package-backup.json
+electron/main-backup.js
+
+# Documentation temp files (keep the final guides)
+FIX_COMPLETATI.txt
+CHANGELOG.md
+ISTRUZIONI.txt
+
+# Updated files (already integrated)
+package-updated.json
+electron/main-updated.js

@@ -1,0 +1,79 @@
+===========================================
+🚀 COMANDI RAPIDI GITHUB - COPIA E INCOLLA
+===========================================
+
+IMPORTANTE: Sostituisci YOUR_USERNAME con il tuo username GitHub!
+
+-------------------------------------------
+1. APRI POWERSHELL NELLA CARTELLA PROGETTO
+-------------------------------------------
+cd "c:\Users\User\Desktop\Spotifly 2.0"
+
+
+-------------------------------------------
+2. INIZIALIZZA GIT
+-------------------------------------------
+git init
+git add .
+git commit -m "Initial commit - Spotifly 2.0"
+git branch -M main
+
+
+-------------------------------------------
+3. COLLEGA A GITHUB
+-------------------------------------------
+git remote add origin https://github.com/YOUR_USERNAME/spotifly.git
+
+Esempio:
+git remote add origin https://github.com/mario_rossi/spotifly.git
+
+
+-------------------------------------------
+4. PUSH SU GITHUB
+-------------------------------------------
+git push -u origin main
+
+(Se chiede password, usa Personal Access Token da: https://github.com/settings/tokens)
+
+
+-------------------------------------------
+5. CREA RELEASE v2.0.0
+-------------------------------------------
+git tag v2.0.0
+git push origin v2.0.0
+
+
+===========================================
+✅ FATTO! 
+===========================================
+
+Ora vai su:
+https://github.com/YOUR_USERNAME/spotifly/actions
+
+E aspetta circa 10 minuti che GitHub compili tutto!
+
+Poi scarica l'installer da:
+https://github.com/YOUR_USERNAME/spotifly/releases
+
+
+===========================================
+🔄 PER AGGIORNAMENTI FUTURI
+===========================================
+
+1. Modifica codice
+
+2. Incrementa versione in package.json:
+   "version": "2.1.0"
+
+3. Commit e push:
+   git add .
+   git commit -m "Descrizione modifiche"
+   git push origin main
+
+4. Crea nuovo tag:
+   git tag v2.1.0
+   git push origin v2.1.0
+
+5. GitHub Actions compila automaticamente!
+
+===========================================

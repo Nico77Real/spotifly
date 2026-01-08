@@ -1,0 +1,164 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trackRow {
+  display: grid;
+  grid-template-columns: 40px 56px 1fr 200px 100px 150px;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: fadeIn 0.3s ease-out backwards;
+  animation-delay: calc(var(--index, 0) * 0.03s);
+}
+
+.trackRow:hover {
+  background-color: #282828;
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.trackRow:hover .playBtn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.trackRow:hover .trackNumber {
+  opacity: 0;
+}
+
+.trackNumber {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 16px;
+  transition: opacity 0.2s;
+}
+
+.trackCover {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trackRow:hover .trackCover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.trackInfo {
+  min-width: 0;
+}
+
+.trackTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  transition: color 0.2s;
+}
+
+.trackRow:hover .trackTitle {
+  color: #1db954;
+}
+
+.trackArtist {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackAlbum {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackDuration {
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: right;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.playBtn,
+.favoriteBtn,
+.addBtn,
+.deleteBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  background: transparent;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.playBtn {
+  background-color: #1db954;
+  color: #000;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  position: absolute;
+  left: 8px;
+  transform: scale(0.8);
+  transition: all 0.2s ease;
+}
+
+.playBtn:hover {
+  transform: scale(1.1) !important;
+  background-color: #1ed760;
+  box-shadow: 0 4px 12px rgba(29, 185, 84, 0.5);
+}
+
+.favoriteBtn:hover {
+  color: #1db954;
+  transform: scale(1.2);
+}
+
+.addBtn:hover {
+  color: #1db954;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(29, 185, 84, 0.6));
+}
+
+.deleteBtn:hover {
+  color: #e22134;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px rgba(226, 33, 52, 0.6));
+}
+
+.favoriteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

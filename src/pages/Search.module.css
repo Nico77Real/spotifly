@@ -1,0 +1,161 @@
+.search {
+  width: 100%;
+}
+
+.search h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.searchForm {
+  margin-bottom: 32px;
+}
+
+.searchBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchInput::placeholder {
+  color: #757575;
+}
+
+.loading {
+  text-align: center;
+  padding: 32px;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.results h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.trackList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.trackItem {
+  display: grid;
+  grid-template-columns: 40px 56px 1fr 200px 100px 48px;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.trackItem:hover {
+  background-color: #282828;
+}
+
+.trackItem:hover .playBtn {
+  opacity: 1;
+}
+
+.trackNumber {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 16px;
+}
+
+.trackCover {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.trackInfo {
+  min-width: 0;
+}
+
+.trackTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+
+.trackArtist {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackAlbum {
+  font-size: 14px;
+  color: #b3b3b3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.trackDuration {
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: right;
+}
+
+.playBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1db954;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.playBtn:hover {
+  transform: scale(1.06);
+}
+
+.noResults {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.noResults h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.noResults p {
+  font-size: 18px;
+  color: #b3b3b3;
+}
